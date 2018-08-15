@@ -1,0 +1,564 @@
+<html>
+  <head>
+
+      <title>Enales Profile</title>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <script src="jquery.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="/resources/demos/style.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+      <script>
+           $( function() {
+           $( "#accordion" ).accordion({
+            collapsible: true
+          });
+        } );
+            $( function() {
+            $( "#tabs" ).tabs({
+            event: "mouseover"
+          });
+        } );
+      </script>
+
+      <script>
+        function goalFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        function myFunction() {
+            var x = document.getElementById("navigator");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+      </script>
+
+  </head>
+
+    <body>
+
+      <fieldset class="w3-container">
+
+        <embed src="trees.mp3" type="music/mp3" automatic="true" loop="true" width="2px" height="0">
+
+        <div class="w3-bar w3-top w3-yellow w3-opacity">
+            <span class="w3-right">
+            <a href="#" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">About</a>
+            <a href="#project" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">Projects</a>
+            <a href="#interest" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">Interest</a>
+            <a href="#goal" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">Goal</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-blue">Contact Me</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+          </span>
+
+        <div id="navigator" class="w3-bar-block w3-yellow w3-hide w3-hide-large w3-hide-medium">
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#project" class="w3-bar-item w3-button">Projects</a>
+          <a href="#interest" class="w3-bar-item w3-button">Interest</a>
+          <a href="#goal" class="w3-bar-item w3-button">Mission&Vision</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+      </div>
+
+      <section class="section w3-black">
+          <div class="w3-container w3-center">
+            <i class="fa fa-home"></i>
+              <h2>Home</h2>
+          </div>
+      </section>
+
+      <section class="showcase w3-container">
+
+          <div class="w3-container w3-center w3-col m5" style="height: 600px;">
+            <div class = "w3-animate-opacity"><img id="profile_pic" class="w3-circle" src="prof_picc.png" alt="pic"></div>
+            <hr>
+            <h2>Steven Rey S. Enales</h2>
+            <h3>BSIT 3rd year</h3>
+            <br>
+            <button onclick="document.getElementById('start-modal').style.display='block'"
+            class="w3-button w3-red w3-large w3-opacity w3-hover-blue">Admin</button>
+          </div>
+
+          <div class="w3-col m7">
+              <button class="w3-button w3-block w3-left-align w3-blue-grey">
+              About Myself </button>
+
+              <div id="personal" class="w3-container w3-pale-green w3-show">
+                <h3>Hi</h3>
+                <p>
+                  I'm Steven Rey S. Enales, who takes BSIT course at Pasig Catholic College. 
+                  I am a man of many hats although I
+                  Never mastered anything,
+                  but I am ten feet tall
+                  I've never felt this tall since the fall.
+                  Nobody seems to know my name,
+                  So don't leave me and sleep all alone
+                  Maybe stay lost on our way home.
+
+                  Just a young gun with a quick fuse
+                  I was uptight, wanna let loose
+                  I was dreaming of bigger things
+                  And wanna leave my own life behind
+                  Not a yes sir, not a follower
+                  Fit the box, fit the mold
+                  Have a seat in the foyer, take a number
+                  I was lightning before the thunder
+                  
+                </p>
+              </div>
+
+            <button onclick="goalFunction('school')" class="w3-button w3-block w3-left-align w3-blue-grey">
+              Schools </button>
+
+              <div id="school" class="w3-container w3-pale-green w3-hide">
+                <h3>My Schools</h3>
+                <p>
+                  <ul>
+                    <li>Sta. Martha Educational Center Inc.(2004-2014)</li>
+                    <li>Adamson University(2014-2016)</li>
+                    <li>Pasic Catholic College (2016 - Present)</li>
+                  </ul>
+                </p>
+              </div>
+
+          </div>
+
+      </section>
+
+      <section class="section w3-black" id ="about">
+          <div class="w3-container w3-center">
+            <i class="fa fa-user"></i>
+              <h2>About</h2>
+          </div>
+      </section>
+
+      <section class="about3 w3-container">
+          <div class="w3-col m5">
+            <div id="accordion">
+              <h3 class="w3-container w3-green aboutme">Address</h3>
+              <div class="w3-container w3-gray aboutme">
+                <p>
+                  Blk1 L12 Mt. Apo Pinagbuhatan Pasig City
+                </p>
+              </div>
+              <h3 class="w3-container w3-green aboutme">Birth Day</h3>
+              <div class="w3-container w3-gray aboutme">
+                <p>
+                  September 6 1997
+                </p>
+              </div>
+              <h3 class="w3-container w3-green aboutme">Gender</h3>
+              <div class="w3-container w3-gray aboutme">
+                <p>
+                  Male
+                </p>
+              </div>
+              <h3 class="w3-container w3-green aboutme">Height and Weight</h3>
+              <div class="w3-container w3-gray aboutme">          
+                <ul>
+                  <li>5'5</li>
+                  <li>77kg</li>
+                </ul>
+              </div>
+              <h3 class="w3-container w3-green aboutme">Mother's Name</h3>
+              <div class="w3-container w3-gray aboutme">
+                <p>
+                  Luningning S. Enales
+                </p>
+              </div>
+              <h3 class="w3-container w3-green aboutme">Fathers's Name</h3>
+              <div class="w3-container w3-gray aboutme">
+                <p>
+                  Ruselito Y. Enales
+                </p>
+              </div>  
+              <h3 class="w3-container w3-green aboutme">Sister's Names</h3>
+              <div class="w3-container w3-gray aboutme">          
+                <ul>
+                  <li>Mary Abegail S. Enales (first born)</li>
+                  <li>Mary Angelica S. Enales (2nd born)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="w3-container w3-content w3-section w3-col m5" style="width:600px">
+            <img class="mySlides" src="about.jpg" style="width:100%">
+            <img class="mySlides" src="vessel.jpg" style="width:100%">
+            <img class="mySlides" src="blurryface.gif" style="width:100%">
+            <img class="mySlides" src="migraine.jpg" style="width:100%">
+          </div>
+
+      </section>
+
+      <section class="section w3-black" id ="project">
+          <div class="w3-container w3-center">
+            <i class="fa fa-file"></i>
+              <h2>Projects</h2>
+          </div>
+      </section>
+
+      <section class="w3-container showcase">
+
+        <div id="tabs" class="w3-container">
+          <ul class="taba">
+            <li class="tabb"><a href="#tabs-1">Programing Languages</a></li>
+            <li class="tabb"><a href="#tabs-2">Skills</a></li>
+            <li class="tabb"><a href="#tabs-3">Projects Created</a></li>
+          </ul>
+          <br><br><br>
+          <div class="w3-container w3-gray" id="tabs-1">
+            <ul>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>Java</li>
+              <li>C#</li>
+              <li>HTML</li>
+            </ul>
+          </div>
+          <div class="w3-container w3-gray" id="tabs-2">
+            <ul>
+              <li>Performance and Scalability optimization</li>
+              <li>Api Design</li>
+              <li>Data warehousing and analystics</li>
+            </ul>
+          </div>
+          <div class="w3-container w3-gray" id="tabs-3">
+            <ul>
+              <li>Android Application</li>
+              <li>Web Design</li>
+              <li>Visual Studio</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w3-container">
+        <div class="w3-container video">
+          <video id="video" controls>
+            <source src="vid1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="w3-container video">
+          <video id="video" controls>
+            <source src="vid2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="w3-container video">
+          <video id="video" controls>
+            <source src="vid3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      </section>
+
+      <section class="section w3-black" id ="interest">
+          <div class="w3-container w3-center">
+            <i class="fa fa-book"></i>
+              <h2>Hobbies & Interest</h2>
+          </div>
+      </section>
+
+      <section class="showcase">
+
+        <div class="w3-container">
+
+          <button onclick="document.getElementById('activities').style.display='block'" class="demo2 w3-button w3-black w3-margin-top">Hobbies</button>
+
+          <button onclick="document.getElementById('favorites').style.display='block'" class="demo2 w3-button w3-black w3-margin-left w3-margin-top">Favorites</button>
+
+          <button onclick="document.getElementById('musicsp').style.display='block'" class="demo2 w3-button w3-black w3-margin-left w3-margin-top">Top Tracks of Panic! at the Disco</button>
+
+          <button onclick="document.getElementById('musicst').style.display='block'" class="w3-button w3-black w3-margin-left w3-margin-top">Top Tracks of Twenty One Pilots</button>
+
+          <button onclick="document.getElementById('musicsf').style.display='block'" class="w3-button w3-black w3-margin-left w3-margin-top">Top Tracks of Twenty One Pilots</button>
+
+          <div id="musicsf" class="w3-modal">
+            <div class="w3-modal-content inggit">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('musicsf').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>Fall Out Boys</h2>
+                </header>
+                  <div class="w3-container w3-center w3-black inggit" style="height: 300px">
+                    <video id="video" controls>
+                      <source src="fob.webm" type="video/webm">
+                    </video>
+                  </div>
+            </div> 
+          </div>
+
+
+          <div id="musicst" class="w3-modal">
+            <div class="w3-modal-content inggit">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('musicst').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>Twenty One Pilots</h2>
+                </header>
+                  <div class="w3-container w3-center w3-black inggit" style="height: 300px">
+                    <video id="video" controls>
+                      <source src="twentyonepilot.webm" type="video/webm">
+                    </video>
+                  </div>
+            </div> 
+          </div>
+
+          <div id="musicsp" class="w3-modal">
+            <div class="w3-modal-content inggit">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('musicsp').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2>Panic! At the disco</h2>
+                </header>
+                  <div class="w3-container w3-center w3-black inggit" style="height: 300px">
+                    <video id="video" controls>
+                      <source src="panic.webm" type="video/webm">
+                    </video>
+                  </div>
+            </div> 
+          </div>
+
+
+          <div id="favorites" class="w3-modal">
+            <div class="w3-modal-content inggit">
+              <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('favorites').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Favorites</h2>
+              </header>
+                <div class="w3-container w3-col m6 w3-black inggit">
+                  <ul class="inngit">
+                    <li>Sports</li>
+                      <ul><li>Basketball</li><li>Swimming</li><li>Chess</li></ul>
+                    <li>Color</li>
+                      <ul><li>blue</li></ul>
+                    <li>Songs</li>
+                      <ul><li>HeavyDirtySoul</li><li>Sugar will falling down</li><li>This is Gospel</li></ul>
+                    <li>Bands</li>
+                     <ul><li>Fall Out Boys</li><li>Twenty One Pilots</li><li>Panic! at the disco</li></ul>
+                  </ul>
+                </div>
+                <div class="w3-container w3-col m6 w3-black inggit">
+                  <ul class="inngit">
+                    <li>Games</li>
+                      <ul><li>Dota</li><li>Super Mario</li><li>Pacman</li></ul>
+                    <li>Series</li>
+                      <ul><li>The Big Bang Theory</li><li>How to get away with murderer</li><li>Friends</li></ul>
+                    <li>Anime</li>
+                      <ul><li>Full Metal Alchemist : BrotherHood</li><li>One Piece</li><li>Code Geass</li>
+                      <li>Dragon Ball Z</li></ul> 
+                  </ul><br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="activities" class="w3-modal">
+            <div class="w3-modal-content inggit">
+              <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('activities').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Hobbies</h2>
+              </header>
+                <div class="w3-container w3-black inggit">
+                  <ul class="inngit">
+                    <li>Playing Games</li>
+                    <li>Watcing Sports</li>
+                    <li>Listening to the Music</li>
+                    <li>Eating</li>
+                    <li>Swimming</li>
+                    <li>Singing</li>
+                    <li>Reading Good Articles</li>
+                    <li>Watching Movies</li>
+                  </ul>
+                </div>
+                <div class="w3-container w3-teal inggit" style="height: 30px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-container w3-content w3-section" style="width: 600px">
+            <img class="mySlides2" src="about.jpg" style="width:100%">
+            <img class="mySlides2" src="vessel.jpg" style="width:100%">
+            <img class="mySlides2" src="blurryface.gif" style="width:100%">
+            <img class="mySlides2" src="migraine.jpg" style="width:100%">
+            <img class="mySlides2" src="mania.jpg" style="width:100%">
+            <img class="mySlides2" src="saverockandroll.jpg" style="width:100%">
+            <img class="mySlides2" src="folieadeux.jpg" style="width:100%">
+            <img class="mySlides2" src="prayforthewicked.jpg" style="width:100%">
+            <img class="mySlides2" src="deathofabatchelor.jpg" style="width:100%">
+            <img class="mySlides2" src="afeveryoucantsweat.jpg" style="width:100%">
+            <img class="mySlides2" src="prettyodd.jpg" style="width:100%">
+        </div>
+
+      </section>
+
+      <section class="section w3-black" id ="goal">
+          <div class="w3-container w3-center">
+            <i class="fa fa-eye"></i>
+              <h2>Goal</h2>
+          </div>
+      </section>
+
+      <section class="section" id="goal_background">
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-col m5">
+              <img src="goal.jpg">
+            </div>
+            <div class="w3-col m7" style="height: 600px;">
+              <button onclick="goalFunction('goal')" class="w3-button w3-block w3-left-align w3-blue-grey">
+              What is my Goal?</button>
+
+              <div id="goal" class="w3-container w3-pale-green w3-show">
+                <h3>Goal</h3>
+                <p>
+                  I wanna be the very best like no one ever was.  To catch them is my real test, to train them is my cause
+                  I will travel across the landn searching far and wide.  Each them to understand the power that's inside.
+                </p>
+              </div>
+
+              <button onclick="goalFunction('dream')" class="w3-button w3-block w3-left-align w3-blue-grey">
+              My Dream </button>
+
+              <div id="dream" class="w3-container w3-pale-green w3-hide">
+                <h3>Dream</h3>
+                <p>
+                  With courage I will face. I will battle every day To claim my rightful place.
+                  Come with me, The time is right, There's no better team. Arm in arm we'll win the fight! It's always been our dream!
+                </p>
+              </div>
+
+              <button onclick="goalFunction('mission')" class="w3-button w3-block w3-left-align w3-blue-grey">
+              What is my Mission?</button>
+
+              <div id="mission" class="w3-container w3-pale-green w3-hide">
+                <h3>Mission</h3>
+                <p>
+                  It's you and me, I know it's my destiny, Oh you're my best friend, In a world we must defend.
+                  A heart so true our courage will pull us through. You teach me and I'll teach you, gotta catch'em all Every challenge along the way
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="section w3-black" id = "contact">
+          <div class="w3-container w3-center">
+            <i class="fa fa-envelope"></i>
+              <h2>Contact Me</h2>
+          </div>
+    </section>
+    <section id="goal_background">
+    <div class="w3-content">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p class="w3-text-white"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Blk1 L12 Mt. Apo Pinagbuhatan Pasig City</p>
+      <p class="w3-text-white"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> CellPhone Number: 09194380201</p>
+      <p class="w3-text-white"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: stevenrey_enales@gmail.com</p>
+    </div><br>
+    <p class="w3-text-white">Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+  </section>
+
+      <footer class="w3-gray w3-padding-large w3-center">
+        <p>Copy Rights &copy; 2018</p>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-square"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i></a>
+        <p><a class="w3-border w3-sand w3-hover-blue" href="#">Back to the top</a></p>
+      </footer>
+
+      <div id="start-modal" class="w3-modal">
+         <div class="w3-modal-content">
+           <header class="w3-content w3-red">
+             <span onclick="document.getElementById('start-modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+             <h2 class="w3-padding">Admin</h2>
+           </header>
+
+           <div class="w3-container">
+            <form >
+              <div class="w3-section">
+                <label>User Name</label>
+                <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="User Name">
+                <label>Password</label>
+                <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Password">
+                <button class="w3-black w3-btn-block w3-section w3-padding">Submit</button>
+              </div>
+            </form>
+           </div>
+         </div>
+       </div>
+      </fieldset>
+
+      <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var w;
+            var d = document.getElementsByClassName("mySlides");
+            for (w = 0; w < d.length; w++) {
+               d[w].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > d.length) {myIndex = 1}    
+            d[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+      </script>
+
+      <script>
+        var myIndex = 0;
+        carousel2();
+
+        function carousel2() {
+            var w;
+            var d = document.getElementsByClassName("mySlides2");
+            for (w = 0; w < d.length; w++) {
+               d[w].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > d.length) {myIndex = 1}    
+            d[myIndex-1].style.display = "block";  
+            setTimeout(carousel2, 3000); // Change image every 2 seconds
+        }
+      </script>
+
+    </body>
+
+</html>

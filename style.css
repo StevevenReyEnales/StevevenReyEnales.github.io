@@ -1,0 +1,115 @@
+.showcase {
+  background: url("background.jpg") no-repeat;
+  background-position: center;
+  padding: 70px 50px;
+  color: #fff;
+  border: double;
+  box-shadow: 2px 5px 5px #FF2400;
+}
+.showcase h1{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.showcase hr{
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  border-width: 3px;
+  border-color: #f44336;
+}
+#profile_pic{
+  width: 200px;
+  border: 2px solid #34459e;
+  box-shadow: 3px 7px 7px #800000;
+  box-sizing: border-box;
+}
+.section{
+  border: double;
+  box-shadow: 2px 5px 5px #FF2400;
+  padding: 20px 0;
+}
+.section h2{
+  padding: 0;
+  margin: 0;
+}
+.section .fa{
+  font-size: 40px;
+}
+.section img {
+ width: 100%;
+}
+#goal_background {
+  background: url(background.jpg) no-repeat;
+  border: double;
+  box-shadow: 2px 5px 5px #FF2400;
+}
+.aboutme {
+  border: double;
+  border-top-right-radius: 2%;
+  box-shadow: 2px 5px 5px #FF2400;
+}
+.about3 {
+  background: url("background.jpg") no-repeat;
+  background-position: center;
+  padding: 70px 50px;
+  color: #fff;
+  border: double;
+  box-shadow: 2px 5px 5px #FF2400;
+}
+.about3 img {
+  width: 100%;
+  height: 100%;
+  margin-left: 100px;
+  border: double;
+  box-shadow: 2px 5px 5px #F5F500;
+}
+#tabs .taba {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+#tabs .taba .tabb {
+  background-color: green;
+  float: left;
+  width: 200px;
+  height: 40px;
+  opacity: .9;
+  line-height: 35px;
+  text-align: center;
+  font-size: 13px;
+  border: 1px 1px 1px 1px;
+  font-weight: bold; 
+}
+.video{
+  margin-top: 30px;
+  float: left;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 300px;
+  background-color: black;
+}
+#video {
+  margin-top: 55px;
+  width: 428px;
+  height: 200px;
+}
+.mySlides{
+  display: none;
+}
+footer {
+  border: double;
+  border-top-right-radius: 2%;
+  box-shadow: 2px 5px 5px #FF2400;
+}
+.mySlides2{
+  display: none;
+}
+.inggit {
+  border: double;
+  border-top-right-radius: 2%;
+  box-shadow: 2px 5px 5px #FF2400;
+}
+
